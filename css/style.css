@@ -162,7 +162,7 @@ nav ul li a:hover::after{
     display: block;
 }
 
-/* --------services-------- */
+/* --------favourties-------- */
 #services{
     padding: 30px 0;
 }
@@ -172,6 +172,7 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .services-list div{
     background: #262626;
@@ -188,6 +189,11 @@ nav ul li a:hover::after{
 
 .services-list div h2{
     font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div h4{
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 15px;
 }
