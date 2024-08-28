@@ -1,0 +1,176 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="icon" type="image/x-icon" href="images/graduating-student.ico" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e5066d9c55.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Yati</span><br>Ko Ko From Myanmar</h1>
+            </div>
+        </div>
+    </div>
+   
+    <!-- ---------about--------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/avatar.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> I am a Computer Science student at the University of Debrecen who is passionate about software
+                        development and web technologies. I am knowledgeable in software development processes,
+                        algorithms, and data structures. I am highly self-motivated and pick up new skills rapidly. I've
+                        been eager to find a job and ready for new experiences</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Languages:</span><br>C++, JAVA, PHP, HTML, CSS, JAVASCRIPT, BOOTSTRAP, SQL, MYSQL</li>
+                                <li><span>TOOLS:</span><br>GIT ,GITHUB, MAVEN, MATLAB, JIRA</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Feb 2024 - Apr 2024</span><br>Software Engineer Intern at Abhyaz</li>
+                                <li><span>Jul 2024 - Current</span><br>Web Developer at Lime Light Tech Lead</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>University of Debrecen</span><br>Computer Science : BSc</li>
+                                <li><span>Expected Graduation Date</span><br>Jan 2025</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------service------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Crafting responsive and visually stunning websites that 
+                        deliver seamless user experiences across all devices.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Designing and building intuitive mobile applications that
+                         engage users and drive business growth.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <h2>Test Automation</h2>
+                    <p>Implementing automated testing solutions to ensure
+                         your software's reliability, performance, and quality.</p>
+                    <a href="#portfolio">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------portfolio------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project1.png">
+                    <div class="layer">
+                        <h3>Turn-Based Game on a 6x6 Board</h3>
+                        <p>This is a turn-based game played on a 6x6 board. 
+                            Players take turns selecting an empty cell and placing their symbol (X or O) 
+                            in that cell and its neighboring empty cells. When a chosen cell has 4 empty 
+                            neighboring cells, the player's symbols form a plus (+) shape. 
+                            The objective is to make the last move and be the player who places
+                             the final symbol on the board.</p>
+                        <a href="https://github.com/Rati-dk/Javafx-boardgame-project.git" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project2.jpg">
+                    <div class="layer">
+                        <h3>Test Automation Project</h3>
+                        <p>Project to demonstrate using Cucumber and Selenium Webdriver for test automation.
+                            <br>
+                            The test uses the Saucedemo site. <br>                            
+                            Built using Java 17.</p>
+                        <a href="https://github.com/Rati-dk/TestAutomationProject.git" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project3.jpg">
+                    <div class="layer">
+                        <h3>Web Design</h3>
+                        <p>This website showcases the Parallex-Scrolling Design using HMTL, CSS and JAVASCRIPT</p>
+                        <a href="https://rati-dk.github.io/Parallax-Scrolling-Design/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+     <!-- ------------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-solid fa-heart"></i>My Website 2024</p>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+   
+</body>
+</html>
